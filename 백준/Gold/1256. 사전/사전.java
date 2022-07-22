@@ -49,8 +49,7 @@ public class Main {
         // a,z 둘다 남은 경우 a를 고를 때 조합 수를 보고 판단
         else{
             // 'a'를 고를때
-            int leftCount = combination(n + m - 1, m);
-            // int leftCount = dp[n + m -1][m];
+            int leftCount = combination(n + m - 1, n - 1);
             if(leftCount >= k){
                 sb.append('a');
                 query(n - 1, m, k);
