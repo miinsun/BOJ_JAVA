@@ -20,7 +20,7 @@ public class Main {
         int answer = 1;
         for(int i = 2; i <= N; i++){
             dp[i] = 1;
-            for(int j = 0; j < i; j++){
+            for(int j = 1; j < i; j++){
                 if(arr[i] > arr[j] && dp[i] <= dp[j]){
                     dp[i] = dp[j] + 1;
                 }
